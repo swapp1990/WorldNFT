@@ -1,5 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
 import mapboxgl from "mapbox-gl";
+import styled from "styled-components";
 import { getAppUrl } from "../../utils/getAppUrl";
 
 import Search from "./search";
@@ -8,6 +9,13 @@ import Page from "./page";
 
 import "./app.css";
 import "./map.css";
+
+const SearchWrapper = styled.div`
+  position: absolute;
+  ${({ theme }) => theme.mediaQueries.sm}{
+    width: 24rem;
+  }
+`;
 
 mapboxgl.accessToken =
   "pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4M29iazA2Z2gycXA4N2pmbDZmangifQ.-g_vE53SD2WrJ6tFX7QHmA";
@@ -19,20 +27,20 @@ const Map = () => {
   const [myGeoJson, setMyGeoJson] = useState([]);
   const [newGeoJson, setNewGeoJson] = useState([]);
   const [types, setTypes] = useState([
-    { slug: "house", name: "🗺 LAND", checked: true },
-    { slug: "services", name: "💈 SERVICES", checked: true },
-    { slug: "shared", name: "🏠 ESTATE", checked: true },
-    { slug: "dorm", name: "🏩 SOLTEL", checked: true },
-    { slug: "solfood", name: "🍔 SOLFOOD", checked: true },
-    { slug: "apartment", name: "🏢 APARTMENT", checked: true },
-    { slug: "monument", name: "🗽 MONUMENT", checked: true },
-    { slug: "solmobiles", name: "🚗 SOLMOBILES", checked: true },
-    { slug: "luv", name: "💜 LUV", checked: true },
-    { slug: "stadium", name: "🏟 STADIUM", checked: true },
-    { slug: "share", name: "🚪 NFT SHARE", checked: true },
-    { slug: "store", name: "🏬 STORE", checked: true },
-    { slug: "boat", name: "⛵️ BOAT", checked: true },
-    { slug: "yacht", name: "🛥 YACHT", checked: true },
+    { slug: "house", name: "🗺LAND", checked: true },
+    { slug: "services", name: "💈SERVICES", checked: true },
+    { slug: "shared", name: "🏠ESTATE", checked: true },
+    { slug: "hotel", name: "🏩HOTEL", checked: true },
+    { slug: "restaurant", name: "🍔RESTAURANT", checked: true },
+    { slug: "apartment", name: "🏢APARTMENT", checked: true },
+    { slug: "monument", name: "🗽MONUMENT", checked: true },
+    { slug: "car", name: "🚗CAR", checked: true },
+    { slug: "taxi", name: "🚕TAXI", checked: true },
+    { slug: "stadium", name: "🏟STADIUM", checked: true },
+    { slug: "bank", name: "🏦BANK", checked: true },
+    { slug: "store", name: "🏬STORE", checked: true },
+    { slug: "boat", name: "⛵️BOAT", checked: true },
+    { slug: "yacht", name: "🛥YACHT", checked: true },
   ]);
   const [rooms, setRooms] = useState([
     { slug: "one", name: "One", checked: false },
@@ -607,7 +615,7 @@ const Map = () => {
     });
 
     if (newGeoJson.length) {
-      let bound=[]
+      let bound = [];
       newGeoJson.map((place) => bound.push(place.geometry.coordinates));
       map.fitBounds(bound);
     }
@@ -734,7 +742,7 @@ const Map = () => {
     <div style={{ position: "relative", height: "92%" }}>
       <div className="map-container" ref={mapContainerRef} />
 
-      <div className={getSlideClasses()} style={{ position: "absolute" }}>
+      <SearchWrapper className={getSlideClasses()}>
         <Search
           types={types}
           rooms={rooms}
@@ -750,7 +758,7 @@ const Map = () => {
           onChangeDeposit={handleChangeDeposit}
           getPlacesCount={getPlacesCount}
         />
-      </div>
+      </SearchWrapper>
       <div
         className={getPageOverlayClasses()}
         onClick={() => {

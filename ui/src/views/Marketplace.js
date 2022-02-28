@@ -635,7 +635,7 @@ export default function Marketplace() {
       >
         <Modalwrapper>
           <div>
-            <div>From : </div>
+            <div style={{ color: "white" }}>From : </div>
             <input
               type="number"
               value={minVal}
@@ -646,7 +646,7 @@ export default function Marketplace() {
           </div>
           <br />
           <div>
-            <div>To : </div>
+            <div style={{ color: "white" }}>To : </div>
             <input
               type="number"
               value={maxVal}
@@ -663,8 +663,11 @@ export default function Marketplace() {
               width: "80px",
               height: "30px",
             }}
-            onClick={()=>{
-              dispatcher.dispatch({ type: "SET_PRICE_RANGE", content: [minVal,maxVal] });
+            onClick={() => {
+              dispatcher.dispatch({
+                type: "SET_PRICE_RANGE",
+                content: [minVal, maxVal],
+              });
               handleCloseModal();
               refreshPage();
             }}

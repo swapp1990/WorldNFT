@@ -792,6 +792,7 @@ export default function NftDetail() {
   const styles = {
     entryLabel: {
       color: "#000000",
+      fontFamily:"Archivo Black",
       fontWeight: 600,
       fontSize: "20px",
     },
@@ -803,14 +804,15 @@ export default function NftDetail() {
     },
     sectionLabel: {
       color: "#000000",
+      fontFamily:"Archivo Black",
       fontWeight: 600,
       fontSize: "22px",
       lineHeight: "20px",
     },
     auctionTimeNumber: {
-      color: "#00FFA3",
+      color: "#000000",
       fontWeight: 600,
-      fontSize: "24px",
+      fontSize: "20px",
       lineHeight: "24px",
     },
     auctionTimeDesc: {
@@ -1030,7 +1032,7 @@ export default function NftDetail() {
                 }}
               ></span>
               <BidLogWrapper className="mt-4 ml-4 pl-4">
-                <span style={styles.sectionLabel}>Bid Logs</span>
+                <span style={styles.sectionLabel}>BIDS</span>
                 <BidsLog />
               </BidLogWrapper>
             </NftDetailWrapper>
