@@ -144,7 +144,7 @@ const SubtitleWrapper = styled.div`
 
 const SectionFour = styled.div`
   min-height: 700px;
-  padding-top: 16px;
+  padding-top: 100px;
   padding-bottom: 16px;
   background-color: #050814;
 `;
@@ -357,7 +357,7 @@ export default function Home() {
         </SectionTwoFirstPart>
       </SectionTwo>
       <SectionThree>
-        <SubtitleWrapper>THE GAME</SubtitleWrapper>
+        <SubtitleWrapper>🌎 THE LNE GAME</SubtitleWrapper>
         <SectionThreeVideo>
           <iframe
             src="https://www.youtube.com/embed/wTYi2W18REE?rel=0&amp;controls=1&amp;autoplay=0&amp;mute=0&amp;start=0"
@@ -369,7 +369,7 @@ export default function Home() {
         </SectionThreeVideo>
       </SectionThree>
       <SectionFour>
-        <SubtitleTwo>PURPOSE OVER PROFIT</SubtitleTwo>
+        <SubtitleTwo>🏁 BUY BACK THE WORLD</SubtitleTwo>
         <CardContainer>
           <GridWrapper>
             <GridItem>
@@ -395,10 +395,6 @@ export default function Home() {
                 <CardImageWrapper src="images/Element_2.png" />
                 <CardTitle>💙Haus🔑</CardTitle>
                 <CardContent>
-                  <LineWrapper>
-                    Home is where the heart is takes on a new meaning. We're
-                    working on ending homelessness. Discord to set up your biz.
-                  </LineWrapper>
                   <LineWrapper>
                     🚪 If you own a Haus you can rent out a room to a 5️⃣D LUVR
                   </LineWrapper>
@@ -447,10 +443,6 @@ export default function Home() {
                     🏉 Add your shiny 5️⃣D LUVR to your social media profile
                     picture to let other's know you’re in the game
                   </LineWrapper>
-                  <LineWrapper>
-                    📱 Use our emoji #🍰💜hieroglyphics to find who holds a LUV
-                    NFT service or business you’re interested in
-                  </LineWrapper>
                 </CardContent>
               </CardWrapper>
             </GridItem>
@@ -460,16 +452,19 @@ export default function Home() {
                 <CardTitle>🗿Landmark🗼</CardTitle>
                 <CardContent>
                   <LineWrapper>
-                    🎙 We will personally create the LUV NFT collections for all
-                    entertainers
+                    Own a LUV NFT Estate Landmark in the Metaverse.
                   </LineWrapper>
                   <LineWrapper>
-                    🔒 Your fans will be able to unlock private social media
-                    rooms with your LUV NFT collections
+                    🗼Own the Tokyo Tower is the second-tallest building in
+                    Japan, located in Minato, Tokyo
                   </LineWrapper>
                   <LineWrapper>
-                    💰 The best part is you’ll earn a lifetime of royalties on
-                    secondary sales from your content
+                    🗻Own Mount Fuji (called Fuji-san in Japan) is the largest
+                    mountain in Japan
+                  </LineWrapper>
+                  <LineWrapper>
+                    🗿Own a moai, one of the famed, giant stone statues of human
+                    figures on Easter Island
                   </LineWrapper>
                 </CardContent>
               </CardWrapper>
@@ -477,20 +472,18 @@ export default function Home() {
             <GridItem>
               <CardWrapper to={`/market`}>
                 <CardImageWrapper src="images/Element_6.png" />
-                <CardTitle>📚Store📗</CardTitle>
+                <CardTitle>🛍️Store🛒</CardTitle>
                 <CardContent>
                   <LineWrapper>
                     Boss up and own a NFT store that allows you to operate your
                     business in the LUV Metaverse
                   </LineWrapper>
                   <LineWrapper>
-                    📕 We will create your branded LUV NFT services and products
+                    🛍️ Put your store on the Metaverse business directory
                   </LineWrapper>
+                  <LineWrapper>🛒 Auction LUV NFT products</LineWrapper>
                   <LineWrapper>
-                    📗 Market your business in our Discord and Telegram .
-                  </LineWrapper>
-                  <LineWrapper>
-                    📘 Create a branded wallet address name
+                    ⌛ Rent out your LUV NFT services and products by the hour
                   </LineWrapper>
                 </CardContent>
               </CardWrapper>
