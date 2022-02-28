@@ -509,9 +509,9 @@ export default function Home() {
         >
           <div>
             <div style={{ fontFamily: "Archivo Black", fontSize: "24px" }}>
-              LUV NFT MARKET
+              LUV NFT ESTATE
             </div>
-            <div>Powered by Harmony ONE ⚡️ Solana ⚡️ Polygon ⚡️ BSC</div>
+            <div>Powered by Harmony ONE</div>
             <div> 2022 LUV Network</div>
           </div>
           {/* <div

@@ -75,6 +75,13 @@ export default function Header() {
             🏠
           </Link>
           <Link
+            to={`/world`}
+            className="p-2 lg:px-2 md:mx-0 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300"
+            style={{ fontSize: "25px", color: "white" }}
+          >
+            🗺
+          </Link>
+          <Link
             to={`/about`}
             className="p-2 lg:px-2 md:mx-0 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300"
             style={{ fontSize: "25px" }}

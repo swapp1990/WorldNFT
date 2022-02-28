@@ -62,10 +62,7 @@ class Page extends Component {
             <button
               className="detail-page-button"
               onClick={() => {
-                alert(
-                  page.coordinates +
-                    "Let me know what functionalities I add here!"
-                );
+                alert(page.coordinates);
               }}
             >
               <span>BUY</span>
@@ -73,7 +70,7 @@ class Page extends Component {
             <button
               className="detail-page-button"
               onClick={() => {
-                alert(page.coordinates+"Let me know what functionalities I add here!");
+                alert(page.coordinates);
               }}
             >
               <span>RENT</span>
