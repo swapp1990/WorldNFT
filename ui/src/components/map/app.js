@@ -27,12 +27,12 @@ const Map = () => {
   const [myGeoJson, setMyGeoJson] = useState([]);
   const [newGeoJson, setNewGeoJson] = useState([]);
   const [types, setTypes] = useState([
-    { slug: "house", name: "🗺LAND", checked: true },
+    { slug: "land", name: "🗺LAND", checked: true },
     { slug: "services", name: "💈SERVICES", checked: true },
-    { slug: "shared", name: "🏠ESTATE", checked: true },
+    { slug: "house", name: "🏠HAUS", checked: true },
     { slug: "hotel", name: "🏩HOTEL", checked: true },
     { slug: "restaurant", name: "🍔RESTAURANT", checked: true },
-    { slug: "apartment", name: "🏢APARTMENT", checked: true },
+    { slug: "office", name: "🏢OFFICE", checked: true },
     { slug: "monument", name: "🗽MONUMENT", checked: true },
     { slug: "car", name: "🚗CAR", checked: true },
     { slug: "taxi", name: "🚕TAXI", checked: true },
@@ -98,7 +98,7 @@ const Map = () => {
               thumbnail: "/assets/images/thumbnail/dorm/2/3.jpg",
             },
           ],
-          type: "dorm",
+          type: "store",
           rooms: 2,
           area: 94,
           rent: 20700,
@@ -133,7 +133,7 @@ const Map = () => {
               thumbnail: "/assets/images/thumbnail/apartment/1/3.jpg",
             },
           ],
-          type: "apartment",
+          type: "office",
           rooms: 2,
           area: 65,
           rent: 13200,
@@ -167,7 +167,7 @@ const Map = () => {
               thumbnail: "/assets/images/thumbnail/dorm/1/3.jpg",
             },
           ],
-          type: "dorm",
+          type: "store",
           rooms: 1,
           area: 70,
           rent: 14500,
@@ -201,7 +201,7 @@ const Map = () => {
               thumbnail: "/assets/images/thumbnail/dorm/1/3.jpg",
             },
           ],
-          type: "dorm",
+          type: "store",
           rooms: 2,
           area: 81,
           rent: 16500,
@@ -235,7 +235,7 @@ const Map = () => {
               thumbnail: "/assets/images/thumbnail/dorm/2/3.jpg",
             },
           ],
-          type: "dorm",
+          type: "store",
           rooms: 1,
           area: 102,
           rent: 21900,
@@ -269,7 +269,7 @@ const Map = () => {
               thumbnail: "/assets/images/thumbnail/house/1/3.jpg",
             },
           ],
-          type: "house",
+          type: "land",
           rooms: 1,
           area: 31,
           rent: 6700,
@@ -303,7 +303,7 @@ const Map = () => {
               thumbnail: "/assets/images/thumbnail/house/1/3.jpg",
             },
           ],
-          type: "house",
+          type: "land",
           rooms: 2,
           area: 132,
           rent: 26400,
@@ -325,19 +325,19 @@ const Map = () => {
             "Molestie a iaculis at erat pellentesque adipiscing commodo elit at. Diam sit amet nisl suscipit adipiscing. Consectetur adipiscing elit duis tristique sollicitudin. In tellus integer feugiat scelerisque varius. Tortor consequat id porta nibh venenatis cras. Mi sit amet mauris commodo. Tellus orci ac auctor augue mauris augue neque gravida. Non diam phasellus vestibulum lorem sed. Et netus et malesuada fames ac.",
           images: [
             {
-              original: "/assets/images/original/shared/2/1.jpg",
-              thumbnail: "/assets/images/thumbnail/shared/2/1.jpg",
+              original: "/assets/images/original/house/2/1.jpg",
+              thumbnail: "/assets/images/thumbnail/house/2/1.jpg",
             },
             {
-              original: "/assets/images/original/shared/2/2.jpg",
-              thumbnail: "/assets/images/thumbnail/shared/2/2.jpg",
+              original: "/assets/images/original/house/2/2.jpg",
+              thumbnail: "/assets/images/thumbnail/house/2/2.jpg",
             },
             {
               original: "/assets/images/original/shared/2/3.jpg",
               thumbnail: "/assets/images/thumbnail/shared/2/3.jpg",
             },
           ],
-          type: "shared",
+          type: "land",
           rooms: 1,
           area: 89,
           rent: 19400,
@@ -371,7 +371,7 @@ const Map = () => {
               thumbnail: "/assets/images/thumbnail/apartment/3/3.jpg",
             },
           ],
-          type: "apartment",
+          type: "office",
           rooms: 1,
           area: 49,
           rent: 11000,
@@ -405,7 +405,7 @@ const Map = () => {
               thumbnail: "/assets/images/thumbnail/apartment/3/3.jpg",
             },
           ],
-          type: "apartment",
+          type: "office",
           rooms: 0,
           area: 51,
           rent: 11400,
@@ -438,7 +438,7 @@ const Map = () => {
               thumbnail: "/assets/images/thumbnail/dorm/1/3.jpg",
             },
           ],
-          type: "dorm",
+          type: "store",
           rooms: 2,
           area: 67,
           rent: 14100,
@@ -476,25 +476,25 @@ const Map = () => {
         `${baseUrl}assets/images/icon-house.png`,
         (error, image) => {
           if (error) throw error;
-          map.addImage("house", image);
+          map.addImage("land", image);
 
           map.loadImage(
             `${baseUrl}assets/images/icon-apartment.png`,
             (error, image) => {
               if (error) throw error;
-              map.addImage("apartment", image);
+              map.addImage("office", image);
 
               map.loadImage(
                 `${baseUrl}assets/images/icon-shared.png`,
                 (error, image) => {
                   if (error) throw error;
-                  map.addImage("shared", image);
+                  map.addImage("house", image);
 
                   map.loadImage(
                     `${baseUrl}assets/images/icon-dorm.png`,
                     (error, image) => {
                       if (error) throw error;
-                      map.addImage("dorm", image);
+                      map.addImage("store", image);
 
                       // Add a data source containing one point feature.
                       map.addSource("point", {

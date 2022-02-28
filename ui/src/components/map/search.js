@@ -25,7 +25,7 @@ class Sreach extends Component {
     return (
       <React.Fragment>
         <header className="sc-slide-header">
-          <h5>Filters</h5>
+          <h5 style={{ fontFamily: "Archivo Black" }}>Filters</h5>
 
           <i
             className="sc-icon-menu sc-slide-toggle"
@@ -37,7 +37,7 @@ class Sreach extends Component {
 
         <div className="sc-slide-body">
           <form className="sc-form">
-            <h6>Type</h6>
+            <h6 style={{ fontFamily: "Archivo Black" }}>Type</h6>
 
             <div className="sc-form-group sc-grid-2">
               {types.map((type, index) => {
@@ -49,7 +49,7 @@ class Sreach extends Component {
                       id={type.slug}
                       data-type={type.slug}
                       checked={type.checked}
-                      onChange={event => {
+                      onChange={(event) => {
                         onChangeType(event);
                       }}
                     />
@@ -57,14 +57,14 @@ class Sreach extends Component {
                     <label htmlFor={type.slug}>
                       <i className="sc-icon-checkbox"></i>
 
-                      <span>{type.name}</span>
+                      <span style={{fontSize:"11px"}}>{type.name}</span>
                     </label>
                   </div>
                 );
               })}
             </div>
 
-            <h6>ROOMS</h6>
+            <h6 style={{ fontFamily: "Archivo Black" }}>ROOMS</h6>
 
             <div className="sc-form-group sc-grid-2">
               {rooms.map((room, index) => {
@@ -76,7 +76,7 @@ class Sreach extends Component {
                       id={room.slug}
                       data-room={room.slug}
                       checked={room.checked}
-                      onChange={event => {
+                      onChange={(event) => {
                         onChangeRoom(event);
                       }}
                     />
@@ -91,7 +91,7 @@ class Sreach extends Component {
               })}
             </div>
 
-            <h6>AREA</h6>
+            <h6 style={{ fontFamily: "Archivo Black" }}>AREA</h6>
 
             <div className="sc-form-group sc-grid-1">
               <InputRange
@@ -99,13 +99,13 @@ class Sreach extends Component {
                 minValue={20}
                 step={5}
                 value={{ min: areas.from, max: areas.to }}
-                onChange={value => {
+                onChange={(value) => {
                   onChangeArea(value);
                 }}
               />
             </div>
 
-            <h6>RENT</h6>
+            <h6 style={{ fontFamily: "Archivo Black" }}>RENT</h6>
 
             <div className="sc-form-group sc-grid-1">
               <InputRange
@@ -113,13 +113,13 @@ class Sreach extends Component {
                 minValue={3000}
                 step={1000}
                 value={{ min: rents.from, max: rents.to }}
-                onChange={value => {
+                onChange={(value) => {
                   onChangeRent(value);
                 }}
               />
             </div>
 
-            <h6>DONATION</h6>
+            <h6 style={{ fontFamily: "Archivo Black" }}>DONATION</h6>
 
             <div className="sc-form-group sc-grid-1">
               <InputRange
@@ -127,7 +127,7 @@ class Sreach extends Component {
                 minValue={10000}
                 step={1000}
                 value={{ min: deposits.from, max: deposits.to }}
-                onChange={value => {
+                onChange={(value) => {
                   onChangeDeposit(value);
                 }}
               />
