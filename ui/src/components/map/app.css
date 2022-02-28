@@ -10,7 +10,7 @@
 /* ------------- Popup ------------- */
 
 .mapboxgl-popup-content {
-  width: 20rem;
+  width: 25rem;
 }
 
 .mapboxgl-popup-content .sc-card-header {

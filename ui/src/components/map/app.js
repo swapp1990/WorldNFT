@@ -12,7 +12,7 @@ import "./map.css";
 
 const SearchWrapper = styled.div`
   position: absolute;
-  ${({ theme }) => theme.mediaQueries.sm}{
+  ${({ theme }) => theme.mediaQueries.sm} {
     width: 24rem;
   }
 `;
@@ -560,36 +560,39 @@ const Map = () => {
         <div>
           <table class="sc-table">
             <tbody>
-              <tr>
-                <td>Type</td>
-                <td>${typeName}</td>
+              <tr style="background-color:black; color:white;">
+                <td>${excert}</td>
               </tr>
 
               <tr>
-                <td>Rooms</td>
-                <td>${rooms}</td>
+                <td>📍LAT: ${Number(coordinates[0]).toFixed(4)} N, ${Number(coordinates[1]).toFixed(4)} E</td>
+              </tr>
+
+              <tr style="background-color:black; color:white;">
+                <td>💙NFT ESTATE: ${typeName}</td>
               </tr>
 
               <tr>
-                <td>Area</td>
-                <td>${area}</td>
+                <td>💼STATUS:</td>
               </tr>
 
-              <tr>
-                <td>Rent</td>
-                <td>${rent}</td>
-              </tr>
-
-              <tr>
-                <td>Deposit</td>
-                <td>${deposit}</td>
+              <tr style="background-color:black; color:white;">
+                <td>Owned by </td>
               </tr>
             </tbody>
           </table>
         </div>
       </div>
 
-      <div class="sc-card-footer">${excert}</div>
+      <div class="sc-card-footer">
+        <table class="sc-table">
+          <tbody>
+              <tr style="background-color:black; color:white;">
+                <td>⚾️ONE: 555 💵USD:$2000</td>
+              </tr>
+          </tbody>
+        </table>
+      </div>
     </div>`;
 
       new mapboxgl.Popup().setLngLat(coordinates).setHTML(html).addTo(map);

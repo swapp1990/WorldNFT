@@ -16,7 +16,7 @@ class Page extends Component {
         }}
       >
         <header className="app-page-header">
-          <h5>
+          <h5 style={{fontFamily: 'Archivo Black', fontSize: "24px", color:"black"}}>
             {page.title}
 
             <i
@@ -33,7 +33,7 @@ class Page extends Component {
             <ImageGallery items={page.images} thumbnailPosition="left" />
           </div>
 
-          <div>
+          <div style={{fontFamily:"Poppins"}}>
             <table className="sc-table">
               <thead>
                 <tr>

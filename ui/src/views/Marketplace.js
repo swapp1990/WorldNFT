@@ -201,10 +201,18 @@ const NFTCardWrapper = styled.div`
   font-family:"Poppins";
   background-image: url(${(props) => {
       switch (props.type) {
-        case "apartment":
-          return homePic;
         case "land":
-          return landPic;
+          return "images/Element_1.png";
+        case "apartment":
+          return "images/Element_5.png";
+        case "house":
+          return "images/Element_2.png";
+        case "hotel":
+          return "images/Element_3.png";
+        case "stadium":
+          return "images/Element_4.png";
+        case "store":
+          return "images/Element_6.png";
         default:
           return;
       }
