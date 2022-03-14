@@ -98,7 +98,7 @@ const Map = () => {
               thumbnail: "/assets/images/thumbnail/dorm/2/3.jpg",
             },
           ],
-          type: "store",
+          type: "land",
           rooms: 2,
           area: 94,
           rent: 20700,
@@ -106,7 +106,7 @@ const Map = () => {
         },
         geometry: {
           type: "Point",
-          coordinates: [5.310258865356445, 60.38377173976387],
+          coordinates: [39.9972675, -75.1768528],
         },
       },
 
