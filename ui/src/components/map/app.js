@@ -79,11 +79,11 @@ const Map = () => {
         type: "Feature",
         properties: {
           id: "item-95",
-          title: "Lorem ipsum dolor sit amet",
+          title: "2630 W Silver St",
           excert:
-            "Praesent ullamcorper dui molestie augue hendrerit finibus. Praesent ut ipsum nulla.",
+            "Land",
           description:
-            "Erat velit scelerisque in dictum non consectetur a erat nam. Pellentesque pulvinar pellentesque habitant morbi tristique senectus et. Pretium aenean pharetra magna ac placerat vestibulum lectus. Augue mauris augue neque gravida in fermentum et. Eros in cursus turpis massa tincidunt. Leo in vitae turpis massa sed elementum tempus egestas. Blandit aliquam etiam erat velit scelerisque in dictum non consectetur.",
+            "700 sq ft lot",
           images: [
             {
               original: "/assets/images/original/dorm/2/1.jpg",
