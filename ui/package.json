@@ -1,8 +1,8 @@
 {
-  "name": "world_nft",
+  "name": "luv_nft_estate",
   "version": "1.1.0",
-  "description": "WorldNFT - React+Tailwind+HarmonyBlockchain",
-  "repository": "https://github.com/swapp1990/WorldNFT",
+  "description": "LUV NFT Estate ",
+  "repository": "https://github.com/blkluv/luv-nft-estate",
   "license": "MIT",
   "dependencies": {
     "@fortawesome/fontawesome-free": "5.15.3",

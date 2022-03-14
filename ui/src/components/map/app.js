@@ -18,7 +18,7 @@ const SearchWrapper = styled.div`
 `;
 
 mapboxgl.accessToken =
-  "pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4M29iazA2Z2gycXA4N2pmbDZmangifQ.-g_vE53SD2WrJ6tFX7QHmA";
+  "pk.eyJ1IjoibHV2bmZ0IiwiYSI6ImNrb2l5ZW4xZzE4MmEydm85bWo5d3llbHEifQ.tAOefp2zVGdeLH0E4E5kTw";
 
 const Map = () => {
   const mapContainerRef = useRef(null);
@@ -27,20 +27,20 @@ const Map = () => {
   const [myGeoJson, setMyGeoJson] = useState([]);
   const [newGeoJson, setNewGeoJson] = useState([]);
   const [types, setTypes] = useState([
-    { slug: "land", name: "🗺LAND", checked: true },
+    { slug: "land", name: "🗺 LAND", checked: true },
     { slug: "services", name: "💈SERVICES", checked: true },
-    { slug: "house", name: "🏠HAUS", checked: true },
-    { slug: "hotel", name: "🏩HOTEL", checked: true },
-    { slug: "restaurant", name: "🍔RESTAURANT", checked: true },
-    { slug: "office", name: "🏢OFFICE", checked: true },
-    { slug: "monument", name: "🗽MONUMENT", checked: true },
-    { slug: "car", name: "🚗CAR", checked: true },
-    { slug: "taxi", name: "🚕TAXI", checked: true },
-    { slug: "stadium", name: "🏟STADIUM", checked: true },
-    { slug: "bank", name: "🏦BANK", checked: true },
-    { slug: "store", name: "🏬STORE", checked: true },
-    { slug: "boat", name: "⛵️BOAT", checked: true },
-    { slug: "yacht", name: "🛥YACHT", checked: true },
+    { slug: "house", name: "🏠 HAUS", checked: true },
+    { slug: "hotel", name: "🏩 HOTEL", checked: true },
+    { slug: "restaurant", name: "🍔 RESTAURANT", checked: true },
+    { slug: "office", name: "🏢 OFFICE", checked: true },
+    { slug: "monument", name: "🗽 MONUMENT", checked: true },
+    { slug: "car", name: "🚗 CAR", checked: true },
+    { slug: "taxi", name: "🚕 HACK", checked: true },
+    { slug: "stadium", name: "🏟 STADIUM", checked: true },
+    { slug: "bank", name: "🏦B ANK", checked: true },
+    { slug: "store", name: "🏬 STORE", checked: true },
+    { slug: "boat", name: "⛵️ BOAT", checked: true },
+    { slug: "yacht", name: "🛥 YACHT", checked: true },
   ]);
   const [rooms, setRooms] = useState([
     { slug: "one", name: "One", checked: false },
