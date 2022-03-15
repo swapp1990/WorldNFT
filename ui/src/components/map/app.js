@@ -573,7 +573,7 @@ const Map = () => {
               </tr>
 
               <tr>
-                <td>💼STATUS:</td>
+                <td>💼 STATUS:</td>
               </tr>
 
               <tr style="background-color:black; color:white;">
@@ -588,7 +588,7 @@ const Map = () => {
         <table class="sc-table">
           <tbody>
               <tr style="background-color:black; color:white;">
-                <td>⚾️ONE: 555 💵USD:$2000</td>
+                <td>💙 ONE: 555 💵 USD:$2000</td>
               </tr>
           </tbody>
         </table>
