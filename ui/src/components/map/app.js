@@ -19,6 +19,12 @@ const SearchWrapper = styled.div`
 
 mapboxgl.accessToken =
   "pk.eyJ1IjoibHV2bmZ0IiwiYSI6ImNrb2l5ZW4xZzE4MmEydm85bWo5d3llbHEifQ.tAOefp2zVGdeLH0E4E5kTw";
+  const map = new mapboxgl.Map({
+    container: 'map', // container ID
+    style: 'mapbox://styles/luvnft/cl0jsaaug001q14pl687sch2h', // style URL
+    zoom: 10, // starting zoom
+    center: [-77.432, 25.0306] // starting position
+    });
 
 const Map = () => {
   const mapContainerRef = useRef(null);
