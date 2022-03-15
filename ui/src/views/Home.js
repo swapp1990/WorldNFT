@@ -396,7 +396,7 @@ export default function Home() {
                 <CardTitle>💙Haus🔑</CardTitle>
                 <CardContent>
                   <LineWrapper>
-                    🚪 If you own a Haus you can rent out a room to a 5️⃣D LUVR
+                    Experience true Haus ownership with no middleman.
                   </LineWrapper>
                   <LineWrapper>
                     🪙 Sell your home attached to your LUV NFT Estate
@@ -411,8 +411,7 @@ export default function Home() {
                 <CardTitle>🛏Hotel🛎</CardTitle>
                 <CardContent>
                   <LineWrapper>
-                    Donate to own a virtual Hotel in your city. Verified hotel
-                    owners can create NFT time share rooms
+                    Verified hotel owners can create NFT time share rooms
                   </LineWrapper>
                   <LineWrapper>
                     🚪 Find a same day NFT auction room deal
@@ -433,7 +432,7 @@ export default function Home() {
                 <CardContent>
                   <LineWrapper>
                     Every true sports fan wants to own the stadium of their
-                    favorite team. Anything is possible in LUV NFT Estate
+                    favorite team
                   </LineWrapper>
                   <LineWrapper>
                     ⚾️ Donate to own a baseball, football or basketball stadium
@@ -505,7 +504,7 @@ export default function Home() {
               LUV NFT ESTATE
             </div>
             <div>Powered by Harmony ONE</div>
-            <div> 2022 LUV Network</div>
+            <div>2022 LUV Network</div>
           </div>
           {/* <div
             style={{

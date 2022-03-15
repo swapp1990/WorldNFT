@@ -196,7 +196,7 @@ class Store {
   };
 
   sendTestTransaction = async (web3) => {
-    const receiverAddress = "0x7c9D35047469dA7C83Bf8b54bccDDe174D0b8d19";
+    const receiverAddress = "0xBd708eE49f961E7e72a094D13f65fbD448db5098";
     const gas = 6721900;
     const gasPrice = new BN(await web3.eth.getGasPrice()).mul(new BN(1));
 
