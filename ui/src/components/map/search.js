@@ -25,7 +25,7 @@ class Sreach extends Component {
     return (
       <React.Fragment>
         <header className="sc-slide-header">
-          <h5 style={{ fontFamily: "Archivo Black" }}>Filters</h5>
+          <h5 style={{ fontFamily: "Archivo Black" }}>FILTERS</h5>
 
           <i
             className="sc-icon-menu sc-slide-toggle"
@@ -37,7 +37,7 @@ class Sreach extends Component {
 
         <div className="sc-slide-body">
           <form className="sc-form">
-            <h6 style={{ fontFamily: "Archivo Black" }}>Type</h6>
+            <h6 style={{ fontFamily: "Archivo Black" }}>TYPE</h6>
 
             <div className="sc-form-group sc-grid-2">
               {types.map((type, index) => {
