@@ -114,11 +114,11 @@ const Map = () => {
         type: "Feature",
         properties: {
           id: "item-138",
-          title: "Orci varius natoque penatibus",
+          title: "7801 Essington Ave",
           excert:
-            "Praesent ullamcorper dui molestie augue hendrerit finibus. Praesent ut ipsum nulla.",
+            "Philadelphia, PA",
           description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Faucibus in ornare quam viverra orci sagittis eu volutpat. Diam ut venenatis tellus in metus vulputate eu. Quam quisque id diam vel quam elementum pulvinar etiam. Imperdiet massa tincidunt nunc pulvinar. Velit aliquet sagittis id consectetur purus ut. Libero enim sed faucibus turpis in eu mi bibendum. Aliquam malesuada bibendum arcu vitae elementum curabitur vitae nunc.",
+            "52,355 SF",
           images: [
             {
               original: "/assets/images/original/apartment/1/1.jpg",
@@ -141,7 +141,7 @@ const Map = () => {
         },
         geometry: {
           type: "Point",
-          coordinates: [5.310602188110352, 60.381502377607916],
+          coordinates: [39.895420, -75.229520],
         },
       },
       {
